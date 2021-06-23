@@ -1,0 +1,24 @@
+﻿create database web_prova2;
+use web_prova2;
+
+create table fornecedor
+(
+id				int				not null auto_increment,
+nome			varchar(50)		not null,
+sexo			char(1)			not null,
+dat_nasc		varchar(10)		not null,
+num_cart_trab	varchar(15)		not null,
+tel_fixo		varchar(12)		not null,
+tel_cel			varchar(13)		not null,
+email			varchar(50)		not null,
+logradouro		varchar(50)		not null,
+numero			int				not null,
+complemento		varchar(50),
+bairro			varchar(50) 	not null,
+cidade			varchar(50)		not null,
+uf				varchar(2)		not null,
+primary key(id)
+);
+
+select * 
+from fornecedor;
